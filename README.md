@@ -1,0 +1,2 @@
+# Farcasterschool
+Miniapp
