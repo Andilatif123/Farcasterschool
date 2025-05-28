@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number Frame</title>
+
+    <meta property="og:title" content="Tebak Angka di Farcaster!" />
+    <meta property="og:image" content="https://placehold.co/600x400/000/fff?text=Tebak+Angka+1-100" />
+    <meta property="og:description" content="Bisakah kamu menebak angka rahasia antara 1 dan 100?" />
+
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://placehold.co/600x400/000/fff?text=Tebak+Angka+1-100" />
+    <meta property="fc:frame:input:text" content="Masukkan tebakanmu (1-100)" />
+    <meta property="fc:frame:button:1" content="Tebak!" />
+    <!-- URL backend yang akan dipanggil saat tombol diklik.
+         Ganti `YOUR_VERCEL_APP_URL` dengan URL aplikasi Vercel Anda setelah deploy.
+         Contoh: `https://my-farcaster-app.vercel.app/api/frame` -->
+    <meta property="fc:frame:post_url" content="https://YOUR_VERCEL_APP_URL/api/frame" />
+    
+    <!-- fc:frame:state digunakan untuk menyimpan status game antar interaksi.
+         Pada awalnya, ini kosong atau berisi nilai default. Backend akan mengupdatenya. -->
+    <meta property="fc:frame:state" content="{}" />
+</head>
+<body>
+    <!-- Konten di dalam <body> ini tidak akan terlihat di Farcaster Frame.
+         Ini hanya sebagai fallback jika halaman diakses langsung di browser. -->
+    <div style="font-family: 'Inter', sans-serif; text-align: center; padding: 20px; background-color: #f0f0f0; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="color: #333;">Selamat datang di Game Tebak Angka!</h1>
+        <p style="color: #666; font-size: 1.1em;">Ini adalah Farcaster Frame. Silakan lihat di Farcaster untuk bermain secara interaktif.</p>
+        <p style="color: #888; font-size: 0.9em;">Jika Anda melihat ini di browser biasa, itu berarti Frame sedang di-host di sini.</p>
+        <img src="https://placehold.co/600x400/000/fff?text=Tebak+Angka+1-100" alt="Farcaster Guess the Number Frame" style="max-width: 90%; height: auto; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <p style="color: #555; margin-top: 20px;">Jangan lupa mengganti <code>YOUR_VERCEL_APP_URL</code> dengan URL aplikasi Vercel Anda!</p>
+    </div>
+</body>
+</html>
